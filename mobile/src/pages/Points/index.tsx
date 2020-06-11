@@ -101,7 +101,7 @@ const Points: React.FC = () => {
                                 >
                                     <View style={styles.mapMarkerContainer}>
                                         <Image style={styles.mapMarkerImage}
-                                            source={{ uri: item.image }} />
+                                            source={{ uri: item.image_url }} />
                                         <Text style={styles.mapMarkerTitle}>{item.name}</Text>
                                     </View>
                                 </Marker>

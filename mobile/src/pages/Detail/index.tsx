@@ -52,7 +52,7 @@ const Details: React.FC = () => {
                 </TouchableOpacity>
 
                 <Image
-                    source={{ uri: data.point.image }}
+                    source={{ uri: data.point.image_url }}
                     style={styles.pointImage}
                 />
 
