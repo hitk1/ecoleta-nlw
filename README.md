@@ -1,5 +1,5 @@
 # ecoleta-nlw
-Projeto desenvolvido seguindo os cursos gratuitos da RocketSeat na primeira versão da #NextLevelWeek. O projeto tem como objetivo auxiliar empresas fictícias a se "divulgarem" para que pessoas possam  ir até elas depositar materiais que poderão ser utilizados posteriormente
+Projeto desenvolvido seguindo o curso gratuito da Rocketseat na primeira versão da #NextLevelWeek. O projeto tem como objetivo, auxiliar empresas fictícias a se "divulgarem" para que as pessoas possam ir até elas pra realizar o descarte de resíduos orgânicos e inorgânicos de maneira correta.
 
 O repositório segue a idéia de [Monorepo](https://www.atlassian.com/git/tutorials/monorepos) integrando [backend](https://github.com/hitk1/ecoleta-nlw/tree/master/backend), [frontend](https://github.com/hitk1/ecoleta-nlw/tree/master/frontend) e [mobile](https://github.com/hitk1/ecoleta-nlw/tree/master/backend) para facilitar a visualização dos projetos.
 
@@ -16,7 +16,7 @@ Criando o banco de dados:
 yarn knex:migrate
 yarn knex:seed
 ```
-Usando node para testes locais:
+Inicializando servidor:
 ```bash
 yarn dev
 ```
