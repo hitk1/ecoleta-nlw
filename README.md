@@ -1,7 +1,7 @@
 # ecoleta-nlw
 Projeto desenvolvido seguindo o curso gratuito da Rocketseat na primeira versão da #NextLevelWeek. O projeto tem como objetivo, auxiliar empresas fictícias a se "divulgarem" para que as pessoas possam ir até elas pra realizar o descarte de resíduos orgânicos e inorgânicos de maneira correta.
 
-O repositório segue a idéia de [Monorepo](https://www.atlassian.com/git/tutorials/monorepos) integrando [backend](https://github.com/hitk1/ecoleta-nlw/tree/master/backend), [frontend](https://github.com/hitk1/ecoleta-nlw/tree/master/frontend) e [mobile](https://github.com/hitk1/ecoleta-nlw/tree/master/backend) para facilitar a visualização dos projetos.
+O repositório segue a idéia de [Monorepo](https://www.atlassian.com/git/tutorials/monorepos) integrando [backend](https://github.com/hitk1/ecoleta-nlw/tree/master/backend), [frontend](https://github.com/hitk1/ecoleta-nlw/tree/master/frontend) e [mobile](https://github.com/hitk1/ecoleta-nlw/tree/master/mobile) para facilitar a visualização dos projetos.
 
 ##Instalação
 A instalação e configuração de cada projeto deverá ser feita individualmente (os projetos foram desenvolvido utilizando o [yarn](https://classic.yarnpkg.com/pt-BR/) certifique-se de ter instalado antes):
