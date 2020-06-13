@@ -23,18 +23,20 @@ const Points: React.FC = () => {
             if (response.data)
                 setItems(response.data)
         })
+    }, [])
 
+    useEffect(() => {
         api.get('/points', {
             params: {
                 city: 'Pindorama',
                 uf: 'SP',
-                items: [5]
+                items: selectedItems
             }
         }).then(response => {
             if (response.data)
                 setPoints(response.data)
         })
-    }, [])
+    }, [selectedItems])
 
     useEffect(() => {
         Location.requestPermissionsAsync().then(response => {

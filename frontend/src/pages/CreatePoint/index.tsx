@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, ChangeEvent, FormEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Map, TileLayer, Marker } from 'react-leaflet'
 import { LeafletMouseEvent } from 'leaflet'
@@ -12,6 +12,7 @@ import Dropzone from '../../components/Dropzone'
 import { IPointsItems, IUfIbgeResponse, ICitiesIbgeResponse } from './interfaces'
 
 const CreatePoint: React.FC = () => {
+    const navigation = useHistory()
 
     const [items, setItems] = useState<IPointsItems[]>([])
     const [ufs, setUfs] = useState<string[]>([])
@@ -114,8 +115,8 @@ const CreatePoint: React.FC = () => {
 
         api.post('/points', data).then(() => {
             alert('Ponto de Coleta criado com sucesso')
-        }).catch(() => {
-            alert('Ocorreu um erro na criação do Ponto de Coleta')
+        }).catch((error: any) => {
+            alert(`Ocorreu um erro na criação do Ponto de Coleta: ${error.message}`)
         })
 
         setFormData({
@@ -127,6 +128,8 @@ const CreatePoint: React.FC = () => {
         setSelectedCity('')
         setSelectedPosition([0, 0])
         setSelectedItems([])
+        
+        navigation.goBack()
     }, [formData, selectedUf, selectedCity, selectedPosition, selectedItems])
 
 
